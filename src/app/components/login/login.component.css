@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    background: url(https://fondosmil.com/fondo/8516.jpg);
+}
+
+.contenedor {
+    width: 100%;
+    padding: 15px;
+}
+
+.formulario {
+    background: #fff;
+}

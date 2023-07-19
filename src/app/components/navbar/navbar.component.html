@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand">Token</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+
+                <a class="nav-link active" routerLinkActive="active" routerLink="/home" aria-current="page">Home</a>
+                <a class="nav-link" routerLinkActive="active" routerLink="/precios">Precios</a>
+                <a class="nav-link" routerLinkActive="active" routerLink="/protegida">Protegida</a>
+            </div>
+        </div>
+        <div class="boton-container">
+            <div class="boton-container">
+                <button *ngIf="mostrarBoton1" class=" btn btn-primary " (click)="intercambiarBotonesIn() ">Inicia Sesion </button>
+                <button *ngIf="!mostrarBoton1 " class="btn btn-primary " (click)="intercambiarBotonesOut() ">Cerrar Sesion </button>
+            </div>
+        </div>
+
+    </div>
+</nav>
